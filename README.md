@@ -2,7 +2,7 @@
 
 Buku cerita bayi: sampul “Buka Buku Cerita”, halaman bernomor, data kelahiran, arti nama, album kecil, dan doa dari kerabat. Aqiqah digelar pada hari ketujuh kelahiran.
 
-**Demo live:** https://undangan-aqiqah-puce.vercel.app
+**Demo live:** https://undangan-aqiqah.pintuweb.id
 
 ![Tangkapan layar](public/og.jpg)
 
