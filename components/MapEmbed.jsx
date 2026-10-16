@@ -8,11 +8,14 @@ export default function MapEmbed() {
   return (
     <Page chapter="Peta Menuju" pageNo="Halaman 6" className="text-center">
       <h2 className="font-display text-3xl font-bold text-ink">Lokasi Acara</h2>
-      <div className="mt-6 overflow-hidden rounded-2xl border-4 border-blush shadow-sm">
+      <div className="relative mt-6 overflow-hidden rounded-2xl border-4 border-blush bg-blush/40 shadow-sm">
+        <p className="absolute inset-0 flex items-center justify-center gap-2 text-sm font-semibold text-muted" aria-hidden="true">
+          <MapPin size={16} /> Memuat peta…
+        </p>
         <iframe
           src={location.mapEmbed}
           title="Peta lokasi acara"
-          className="h-64 w-full border-0"
+          className="relative h-64 w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen

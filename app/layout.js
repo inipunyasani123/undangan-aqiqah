@@ -8,11 +8,13 @@ const display = Quicksand({
   variable: '--font-quicksand',
   display: 'swap',
 });
+// Caveat hanya dipakai di isi (bukan sampul): tidak di-preload agar halaman pertama lebih ringan.
 const script = Caveat({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
   variable: '--font-caveat',
   display: 'swap',
+  preload: false,
 });
 const body = Nunito({
   subsets: ['latin'],
@@ -21,7 +23,7 @@ const body = Nunito({
   display: 'swap',
 });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Undangan Aqiqah Digital — Aisyah Khairunnisa","description":"Contoh undangan aqiqah digital bergaya buku cerita: data kelahiran, arti nama, galeri, RSVP, doa, dan musik latar.","inLanguage":"id"};
+const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Undangan Aqiqah Digital — Aisyah Khairunnisa","url":"https://undangan-aqiqah.pintuweb.id","description":"Contoh undangan aqiqah digital bergaya buku cerita: data kelahiran, arti nama, galeri, RSVP, doa, dan musik latar.","inLanguage":"id"};
 
 export const metadata = {
   metadataBase: new URL("https://undangan-aqiqah.pintuweb.id"),

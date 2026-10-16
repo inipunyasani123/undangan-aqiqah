@@ -14,7 +14,7 @@ export default function Announcement() {
         <Image src={baby.photo} alt={baby.fullName} fill sizes="208px" className="object-cover" />
       </div>
 
-      <h2 className="mt-6 break-words font-display text-4xl font-bold leading-tight text-rose-deep sm:text-5xl">{baby.fullName}</h2>
+      <h1 className="mt-6 break-words font-display text-4xl font-bold leading-tight text-rose-deep sm:text-5xl">{baby.fullName}</h1>
       <p className="mt-3 font-script text-2xl text-[#ce6916]">si kecil penuh berkah</p>
 
       <p className="mt-5 text-sm leading-relaxed text-ink">

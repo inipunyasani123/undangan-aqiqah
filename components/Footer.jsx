@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
         )}
         <p className="mt-2 text-xs text-muted">
-          <Link href="/kirim" className="font-semibold text-rose-deep underline underline-offset-4">Kirim undangan ke kerabat</Link>
+          <Link href="/kirim" className="inline-block py-2 font-semibold text-rose-deep underline underline-offset-4">Kirim undangan ke kerabat</Link>
         </p>
       </div>
     </footer>
