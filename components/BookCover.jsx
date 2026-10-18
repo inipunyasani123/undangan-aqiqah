@@ -49,7 +49,7 @@ export default function BookCover({ keluar, onOpen, onSelesai, musik, onMusik })
 
           {/* Foto bayi */}
           <div className="relative mx-auto my-5 h-36 w-36 overflow-hidden rounded-full border-[6px] border-cream shadow-lg">
-            <Image src={baby.photo} alt={baby.fullName} fill priority sizes="144px" className="object-cover" />
+            <Image src={baby.photo} alt={baby.photoAlt || baby.fullName} fill priority sizes="144px" className="object-cover" />
           </div>
           <p className="font-display text-2xl font-bold text-ink">{baby.name}</p>
           <p className="masuk mt-1 text-xs font-semibold text-muted" style={{ '--tunda': '0.2s' }}>

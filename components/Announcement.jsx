@@ -11,7 +11,7 @@ export default function Announcement() {
       <p className="text-sm font-semibold text-muted">{opening.announce}</p>
 
       <div className="relative mx-auto mt-6 h-52 w-52 overflow-hidden rounded-[2rem] border-[6px] border-blush shadow-md">
-        <Image src={baby.photo} alt={baby.fullName} fill sizes="208px" className="object-cover" />
+        <Image src={baby.photo} alt={baby.photoAlt || baby.fullName} fill sizes="208px" className="object-cover" />
       </div>
 
       <h1 className="mt-6 break-words font-display text-4xl font-bold leading-tight text-rose-deep sm:text-5xl">{baby.fullName}</h1>

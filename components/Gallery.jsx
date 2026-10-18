@@ -17,15 +17,15 @@ export default function Gallery() {
     <Page chapter="Album Kenangan" pageNo="Halaman 5">
       <h2 className="text-center font-display text-3xl font-bold text-ink">Galeri Si Kecil</h2>
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
-        {gallery.map((src, i) => (
+        {gallery.map((foto, i) => (
           <button
-            key={src}
+            key={foto.src}
             type="button"
             onClick={() => setActive(i)}
             className="group relative h-32 w-full overflow-hidden rounded-2xl border-4 border-blush shadow-sm sm:h-36"
-            aria-label={`Perbesar foto ${i + 1}`}
+            aria-label={`Perbesar foto: ${foto.alt}`}
           >
-            <Image src={src} alt={`Foto ${i + 1}`} fill sizes="(max-width:640px) 45vw, 160px" className="object-cover transition group-hover:scale-110" />
+            <Image src={foto.src} alt={foto.alt} fill sizes="(max-width:640px) 45vw, 160px" className="object-cover transition group-hover:scale-110" />
           </button>
         ))}
       </div>
@@ -45,7 +45,7 @@ export default function Gallery() {
               initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <Image src={gallery[active]} alt={`Foto ${active + 1}`} fill sizes="(max-width: 640px) 100vw, 512px" className="object-contain" />
+              <Image src={gallery[active].src} alt={gallery[active].alt} fill sizes="(max-width: 640px) 100vw, 512px" className="object-contain" />
             </motion.div>
           </motion.div>
         )}

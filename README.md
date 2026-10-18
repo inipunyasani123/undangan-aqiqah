@@ -6,7 +6,7 @@ Buku cerita bayi: sampul “Buka Buku Cerita”, halaman bernomor, data kelahira
 
 ![Tangkapan layar](public/og.jpg)
 
-> Contoh dengan data fiktif: nama, tempat, dan nomor rekening tidak sungguhan. Formulir hanya demo dan mengatakannya terus terang. Foto adalah placeholder berlabel yang siap diganti.
+> Contoh dengan data fiktif: nama, tempat, dan nomor rekening tidak sungguhan. Formulir hanya demo dan mengatakannya terus terang. Gambar adalah ilustrasi buku cerita buatan sendiri yang siap diganti foto asli.
 
 ## Fitur
 
@@ -24,12 +24,12 @@ Seluruh isi ada di satu file: `lib/data.js` (nama, tanggal, acara, galeri, musik
 
 - **Tanggal:** ubah teks tanggal *dan* nilai ISO (`mainDate`, `start`, `end`) — hitung mundur dan tombol kalender memakai nilai ISO.
 - **Peta:** contoh menunjuk area kota; ganti `q=` di `location.mapEmbed` dan `mapLink` dengan nama tempat atau koordinat.
-- **Foto:** timpa berkas di `public/images/` dengan nama yang sama (potret 3:4).
+- **Foto:** timpa berkas di `public/images/` dengan nama yang sama (potret 3:4), lalu perbarui `alt` di `lib/data.js`.
 - **Musik:** timpa `public/music/latar.mp3`, lalu ubah `music.title` dan `music.credit`. Pastikan Anda berhak memakai lagunya.
 
 ## Gambar & kredit
 
-- `public/images/*.webp` — placeholder berlabel buatan sendiri (bukan foto stok), digambar ulang dari SVG agar tidak bergantung pada layanan luar.
+- `public/images/*.webp` — ilustrasi buku cerita buatan sendiri (krayon & cat air pastel), digambar dari SVG; tokohnya fiktif. Lihat `public/images/SUMBER.md`.
 - `public/music/latar.mp3` — *Wiegenlied (Guten Abend, gut’ Nacht) — Johannes Brahms*, kotak musik oleh stephan, domain publik — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lullaby_wound_up_clock_guten_abend_gute_nacht.ogg). Diperkecil ke MP3 mono 80 kbps.
 
 ## Teknologi
